@@ -1,0 +1,533 @@
+/* font face */
+@font-face {
+  font-family: "AvenirLight";
+  src: url("../font/FontsFree-Net-Avenir-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PlayfairDisplayBold";
+  src: url("../font/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ReklameScript";
+  src: url("../font/SVN-Reklame Script.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 12px 38px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #6600ea;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #080011;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+input:focus {
+  border-color: #6600ea;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-between {
+  align-items: space-between;
+}
+
+.font-avenir {
+  font-family: 'AvenirLight', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'PlayfairDisplayBold', sans-serif;
+}
+
+.font-reklame {
+  font-family: 'ReklameScript', sans-serif;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.line {
+  width: 95%;
+  border: 1px solid #000000;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  padding-top: 39px;
+}
+
+header h4 {
+  color: #ad79f1;
+  font-size: 22px;
+  line-height: 44px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+}
+
+header h1 {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 116px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+header .header-menu {
+  margin-top: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header .header-menu .header-menu-item {
+  color: #030006;
+  border-left: 1px solid black;
+}
+
+header .header-menu .header-link {
+  font-size: 14px;
+  line-height: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+header .header-menu .header-link.active, header .header-menu .header-link:hover {
+  color: #6600ea;
+}
+
+header .header-menu .header-list-icon {
+  width: 177px;
+  height: 50px;
+  border-right: 1px solid black;
+}
+
+header .header-menu .header-list-icon a {
+  margin-left: 3.5px;
+  margin-right: 3.5px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+header .header-menu .header-list-icon a img {
+  height: 100%;
+  object-fit: cover;
+}
+
+header .header-menu .header-list-icon a.facebook {
+  height: 16px;
+}
+
+header .header-menu .header-list-icon a.instagram {
+  height: 16px;
+}
+
+header .header-menu .header-list-icon a.twitter {
+  height: 16px;
+}
+
+header .header-menu .header-list-icon a.pinterest {
+  height: 24px;
+}
+
+main .about-me {
+  padding-top: 80px;
+  padding-bottom: 75px;
+}
+
+main .about-me .content-left {
+  margin-right: 50px;
+}
+
+main .about-me .content-left .about-me-title {
+  padding: 17px 130px;
+  width: fit-content;
+  border: 1px solid black;
+  font-size: 22px;
+  line-height: 26.4px;
+  font-weight: 400;
+  letter-spacing: 8.8px;
+}
+
+main .about-me .content-left .about-me-image {
+  width: 444px;
+  height: 602px;
+  margin-top: 25px;
+}
+
+main .about-me .content-left .about-me-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .about-me .content-right {
+  padding-top: 87px;
+}
+
+main .about-me .content-right h2 {
+  font-size: 69px;
+  width: 290px;
+}
+
+main .about-me .content-right p {
+  margin-top: 111px;
+  font-size: 17px;
+  font-weight: 400;
+  width: 423px;
+}
+
+main .subscribe {
+  padding-top: 75px;
+  padding-bottom: 85px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+main .subscribe h3 {
+  width: 50%;
+  text-align: center;
+  font-size: 38px;
+}
+
+main .subscribe div {
+  width: 50%;
+  height: 47px;
+}
+
+main .subscribe div input {
+  margin-right: 11px;
+  width: 268px;
+}
+
+main .more-about-me {
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+}
+
+main .more-about-me .content-left {
+  padding-top: 62px;
+  padding-right: 63px;
+  width: 65%;
+  border-right: 1px solid black;
+}
+
+main .more-about-me .content-left .nav-title {
+  font-size: 22px;
+  line-height: 44px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+  text-align: left;
+  width: 698px;
+}
+
+main .more-about-me .content-left .train-of-thought {
+  width: 698px;
+  margin-top: 22px;
+}
+
+main .more-about-me .content-left .train-of-thought .card {
+  margin-top: 34px;
+  height: 260px;
+  border: 1px solid black;
+}
+
+main .more-about-me .content-left .train-of-thought .card:hover .card-content .text h4 {
+  color: #6600ea;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-image {
+  width: 50%;
+  height: 100%;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-content {
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 34px;
+  width: 50%;
+}
+
+main .more-about-me .content-left .train-of-thought .card.card-no-image .card-content {
+  width: 100%;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-content .time {
+  font-size: 12px;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-content .text:hover {
+  color: #6600ea;
+  cursor: pointer;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-content .text h4 {
+  font-size: 28px;
+  margin-top: 23px;
+}
+
+main .more-about-me .content-left .train-of-thought .card .card-content .text p {
+  font-size: 16px;
+  margin-top: 12px;
+  overflow-wrap: break-word;
+}
+
+main .more-about-me .content-left .train-of-thought button {
+  margin-top: 36px;
+  margin-left: 204px;
+  margin-bottom: 510px;
+}
+
+main .more-about-me .content-right {
+  width: 35%;
+}
+
+main .more-about-me .content-right .content-right-container {
+  width: 300px;
+}
+
+main .more-about-me .content-right .content-right-container .about-me-more {
+  padding-top: 62px;
+  padding-bottom: 60px;
+}
+
+
+main .more-about-me .content-right .content-right-container .about-me-more h4 {
+  font-size: 22px;
+  line-height: 44px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  padding-left: 5px;
+}
+
+main .more-about-me .content-right .content-right-container .about-me-more img {
+  width: 289px;
+  height: 288px;
+  object-fit: cover;
+}
+
+main .more-about-me .content-right .content-right-container .about-me-more p {
+  font-size: 17px;
+  line-height: 27px;
+  padding-left: 5px;
+}
+
+main .more-about-me .content-right .content-right-container .about-me-more .read-more {
+  padding-top: 43px;
+  padding-left: 5px;
+}
+
+main .more-about-me .content-right .content-right-container .about-me-more .read-more a {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+main .more-about-me .content-right .content-right-container .about-me-more .read-more a:hover {
+  color: #6600ea;
+}
+
+main .more-about-me .content-right .content-right-container .instagram {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+main .more-about-me .content-right .content-right-container .instagram h4 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 44px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+main .more-about-me .content-right .content-right-container .instagram .list-image div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .more-about-me .content-right .content-right-container .instagram .list-image div img {
+  width: 138px;
+  height: 138px;
+  object-fit: cover;
+}
+
+main .more-about-me .content-right .content-right-container .list-icon {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+main .more-about-me .content-right .content-right-container .list-icon a:first-child {
+  margin-right: 24px;
+}
+
+main .more-about-me .content-right .content-right-container .list-icon a img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+main .more-about-me .content-right .content-right-container .subscribe-2 {
+  padding-top: 45px;
+  padding-bottom: 90px;
+  padding-left: 5px;
+}
+
+main .more-about-me .content-right .content-right-container .subscribe-2 h4 {
+  font-size: 22px;
+  line-height: 44px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+main .more-about-me .content-right .content-right-container .subscribe-2 input {
+  width: 286px;
+  height: 43px;
+  margin-bottom: 20px;
+}
+
+main .more-about-me .content-right .content-right-container .pick-of-month {
+  padding-top: 40px;
+}
+
+main .more-about-me .content-right .content-right-container .pick-of-month h4 {
+  font-size: 22px;
+  line-height: 44px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+
+main .more-about-me .content-right .content-right-container .pick-of-month .pick-image {
+  width: 284px;
+  height: 188px;
+}
+
+main .more-about-me .content-right .content-right-container .pick-of-month .pick-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .follow-instagram {
+  padding-top: 34px;
+}
+
+main .follow-instagram h4 {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 8.8px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+main .follow-instagram .list-instagram-images img {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+}
+
+footer .social-networks {
+  width: 1471px;
+  height: 104px;
+  background-color: black;
+  padding-top: 49px;
+}
+
+footer .social-networks a {
+  margin-right: 10px;
+}
+
+footer .social-networks a:last-child {
+  margin-right: 0;
+}
+
+footer .social-networks a img {
+  width: 39px;
+  height: 39px;
+  object-fit: cover;
+}
+
+footer .copyright {
+  margin-top: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
